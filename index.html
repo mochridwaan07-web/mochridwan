@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhamad Ridwan | 3D Artist & Motion Graphic Designer</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: {
+              400: '#38bdf8',
+              500: '#0284c7',
+              600: '#0369a1',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-black">
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-slate-950/85 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="text-xl font-extrabold tracking-tight text-white hover:text-cyan-400 transition">
+        MUHAMAD<span class="text-cyan-400"> RIDWAN</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <div class="hidden md:flex items-center space-x-7 text-sm font-medium">
+        <a href="#about" class="text-slate-300 hover:text-white transition">
+          <span class="lang-id">Tentang</span><span class="lang-en hidden">About</span>
+        </a>
+        <a href="#experience" class="text-slate-300 hover:text-white transition">
+          <span class="lang-id">Pengalaman</span><span class="lang-en hidden">Experience</span>
+        </a>
+        <a href="#skills" class="text-slate-300 hover:text-white transition">
+          <span class="lang-id">Keahlian</span><span class="lang-en hidden">Skills</span>
+        </a>
+        <a href="#portfolio" class="text-slate-300 hover:text-white transition">
+          <span class="lang-id">Portofolio</span><span class="lang-en hidden">Portfolio</span>
+        </a>
+        <a href="#contact" class="text-slate-300 hover:text-white transition">
+          <span class="lang-id">Kontak</span><span class="lang-en hidden">Contact</span>
+        </a>
+
+        <!-- Download CV Button -->
+        <a href="CV-Muhamad-Ridwan-3DArtist.pdf" download class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-4 py-2 rounded-lg transition shadow-md flex items-center gap-2">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <span>CV</span>
+        </a>
+
+        <!-- Language Switcher Button -->
+        <button onclick="toggleLanguage()" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-slate-700 bg-slate-900 text-xs font-semibold text-slate-200 hover:border-cyan-400 transition" title="Switch Language">
+          <i class="fa-solid fa-globe text-cyan-400"></i>
+          <span id="lang-indicator">EN</span>
+        </button>
+      </div>
+
+      <!-- Mobile Button Area -->
+      <div class="flex items-center gap-3 md:hidden">
+        <button onclick="toggleLanguage()" class="flex items-center gap-1 px-2.5 py-1 rounded-full border border-slate-700 bg-slate-900 text-xs font-semibold text-slate-200">
+          <i class="fa-solid fa-globe text-cyan-400 text-xs"></i>
+          <span id="lang-indicator-mobile">EN</span>
+        </button>
+        <button id="menu-btn" class="text-slate-300 hover:text-white text-xl">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-5 border-b border-slate-800 bg-slate-950 space-y-3">
+      <a href="#about" class="block py-1.5 text-slate-300 hover:text-white"><span class="lang-id">Tentang</span><span class="lang-en hidden">About</span></a>
+      <a href="#experience" class="block py-1.5 text-slate-300 hover:text-white"><span class="lang-id">Pengalaman</span><span class="lang-en hidden">Experience</span></a>
+      <a href="#skills" class="block py-1.5 text-slate-300 hover:text-white"><span class="lang-id">Keahlian</span><span class="lang-en hidden">Skills</span></a>
+      <a href="#portfolio" class="block py-1.5 text-slate-300 hover:text-white"><span class="lang-id">Portofolio</span><span class="lang-en hidden">Portfolio</span></a>
+      <a href="#contact" class="block py-1.5 text-slate-300 hover:text-white"><span class="lang-id">Kontak</span><span class="lang-en hidden">Contact</span></a>
+      <a href="CV-Muhamad-Ridwan-3DArtist" download class="block text-center mt-3 bg-cyan-500 text-slate-950 font-bold px-4 py-2 rounded-lg">
+        <i class="fa-solid fa-file-arrow-down mr-2"></i>Download CV
+      </a>
+    </div>
+  </nav>
+
+  <!-- ================= HERO & BIODATA SECTION ================= -->
+  <section id="hero" class="pt-32 pb-16 md:pt-40 md:pb-24 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div id="about" class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+      
+      <!-- Text Info -->
+      <div class="md:col-span-7 space-y-6">
+        <span class="inline-block py-1 px-3 bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 rounded-full text-xs font-semibold tracking-wider">
+          <span class="lang-id">✨ 7+ Tahun Pengalaman Industri</span>
+          <span class="lang-en hidden">✨ 7+ Years Industry Experience</span>
+        </span>
+
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight">
+          Muhamad Ridwan
+        </h1>
+        
+        <p class="text-lg sm:text-xl font-medium text-cyan-400">
+          3D Artist • Motion Graphic Designer • Graphic Designer
+        </p>
+
+        <!-- Biodata Paragraphs -->
+        <div class="text-slate-300 text-sm sm:text-base leading-relaxed space-y-4">
+          <!-- INDONESIAN BIODATA -->
+          <div class="lang-id space-y-3">
+            <p>
+              Halo, saya <strong>Muhamad Ridwan</strong> kelahiran Bekasi, 1996. Merupakan Profesional Kreatif di bidang 3D Artist, Motion Graphic Designer, dan Graphic Designer dengan pengalaman lebih dari <strong>7 tahun</strong>. Memiliki spesialisasi dalam pengembangan visual 3D produk, motion graphic, serta berbagai kebutuhan multimedia.
+            </p>
+            <p>
+              Sepanjang perjalanan profesional, saya telah terlibat dalam pengerjaan desain 3D produk untuk berbagai brand ternama seperti <em>Emily, Norge, Inti Baby, OONew, Sucvent,</em> dan <em>We Are Mother</em>. Selain itu, berpengalaman berpartisipasi dalam proyek multimedia korporasi & institusi, termasuk <strong>BUMN, Danur 3, Bank Mandiri, Tugu Insurance, Telkomsel, PLN, Kemenpora,</strong> dan <strong>KSEI</strong>.
+            </p>
+            <p class="text-slate-400 text-xs sm:text-sm italic">
+              Di luar aktivitas profesional, saya memiliki ketertarikan terhadap dunia outdoor seperti hiking, trail running, serta bermusik sebagai wadah mengeksplorasi kreativitas dan inspirasi baru.
+            </p>
+          </div>
+
+          <!-- ENGLISH BIODATA -->
+          <div class="lang-en hidden space-y-3">
+            <p>
+              Hello, I am <strong>Muhamad Ridwan</strong>, born in Bekasi, 1996. I am a Creative Professional in 3D Art, Motion Graphic Design, and Graphic Design with over <strong>7 years</strong> of experience. Specialized in 3D product visualization, motion graphics, and diverse multimedia productions.
+            </p>
+            <p>
+              Throughout my journey, I have contributed to 3D product visuals for prominent brands like <em>Emily, Norge, Inti Baby, OONew, Sucvent,</em> and <em>We Are Mother</em>. Additionally, I have participated in multimedia & corporate visual communication for entities including <strong>BUMN, Danur 3, Bank Mandiri, Tugu Insurance, Telkomsel, PLN, Kemenpora,</strong> and <strong>KSEI</strong>.
+            </p>
+            <p class="text-slate-400 text-xs sm:text-sm italic">
+              Beyond commercial work, I am passionate about the outdoors—such as hiking and trail running—and music as a lifestyle to recharge creativity and unlock fresh perspectives.
+            </p>
+          </div>
+        </div>
+
+        <!-- Call To Actions -->
+        <div class="flex flex-wrap gap-4 pt-2">
+          <a href="#portfolio" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-6 py-3 rounded-xl transition shadow-lg shadow-cyan-500/20">
+            <span class="lang-id">Lihat Portofolio</span>
+            <span class="lang-en hidden">View Portfolio</span>
+          </a>
+          <a href="CV-Muhamad-Ridwan-3DArtist.pdf" download class="border border-slate-700 bg-slate-900/60 hover:bg-slate-800 text-white font-medium px-6 py-3 rounded-xl transition flex items-center gap-2">
+            <i class="fa-solid fa-download text-cyan-400"></i>
+            <span class="lang-id">Unduh CV (PDF)</span>
+            <span class="lang-en hidden">Download CV (PDF)</span>
+          </a>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="pt-4 flex items-center gap-3">
+          <span class="text-xs uppercase tracking-wider text-slate-500 font-semibold mr-1">Social:</span>
+          <a href="https://www.instagram.com/moch_ridwaan/" target="_blank" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-cyan-400 hover:scale-110 transition">
+            <i class="fa-brands fa-instagram text-lg"></i>
+          </a>
+          <a href="https://www.tiktok.com/@moch_ridwaan" target="_blank" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-cyan-400 hover:scale-110 transition">
+            <i class="fa-brands fa-tiktok text-lg"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/muhamad-ridwan-095305288/" target="_blank" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-cyan-400 hover:scale-110 transition">
+            <i class="fa-brands fa-linkedin-in text-lg"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Avatar Card -->
+      <div class="md:col-span-5 flex justify-center">
+        <div class="relative w-64 h-80 sm:w-80 sm:h-96 rounded-3xl overflow-hidden border-2 border-slate-800 bg-slate-900 p-2 group shadow-2xl">
+          <div class="w-full h-full rounded-2xl overflow-hidden relative">
+            <img src="foto-profil-bw.jpg"
+                 onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80'"
+                 alt="Muhamad Ridwan" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500 filter grayscale contrast-125" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+            <div class="absolute bottom-4 left-4 right-4">
+              <p class="text-xs font-bold text-cyan-400 uppercase tracking-widest">Bekasi, ID</p>
+              <h3 class="text-white font-bold text-lg">Muhamad Ridwan</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CLIENTS / BRAND STRIP -->
+    <div class="mt-16 pt-10 border-t border-slate-800/80">
+      <p class="text-center text-xs font-semibold text-slate-500 uppercase tracking-widest mb-6">
+        <span class="lang-id">Brand, Institusi dan korporasi yang pernah ditangani</span>
+        <span class="lang-en hidden">Brands & Institutions Collaborated With</span>
+      </p>
+      <div class="flex flex-wrap justify-center items-center gap-x-6 gap-y-3 text-xs sm:text-sm font-semibold text-slate-400">
+        <span class="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800">Emily</span>
+        <span class="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800">Norge</span>
+        <span class="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800">Inti Baby</span>
+        <span class="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800">OONew</span>
+	<span class="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800">Sucvent</span>
+        <span class="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800">We Are Mother</span>
+        <span class="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800">Bank Mandiri</span>
+        <span class="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800">Telkomsel</span>
+        <span class="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800">PLN</span>
+        <span class="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800">Tugu Insurance</span>
+        <span class="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800">Danur 3</span>
+        <span class="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800">Kemenpora</span>
+        <span class="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800">KSEI</span>
+        <span class="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800">BUMN</span>
+        <span class="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800">Java Jazz</span>
+        <span class="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800">Tolak Angin</span>
+        <span class="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800">Battle Of Monster</span>
+        <span class="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800">Suzuki Motor</span>
+        <span class="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800">Declan</span>
+        <span class="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800">Neo Coffee</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= VISUAL TIMELINE SECTION (EXPERIENCE & MILESTONES) ================= -->
+  <section id="experience" class="py-20 bg-slate-900/40 border-y border-slate-800 relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <h2 class="text-xs font-bold text-cyan-400 uppercase tracking-widest">
+          <span class="lang-id">Rekam jejak (2014 — Saat Ini)</span>
+          <span class="lang-en hidden">Chronological Journey (2014 — Present)</span>
+        </h2>
+        <h3 class="text-3xl sm:text-4xl font-black text-white mt-1.5">
+          <span class="lang-id">Milestone Akademis & Karier</span>
+          <span class="lang-en hidden">Career Milestones & Project Roadmap</span>
+        </h3>
+        <p class="text-slate-400 text-sm mt-2.5 leading-relaxed">
+          <span class="lang-id">Eksplorasi rekam jejak dedikasi kerja mulai dari industri manufaktur otomotif, 3D artist visual produk, motion graphic komersial, hingga visual multimedia institusi dan korporat.</span>
+          <span class="lang-en hidden">Explore a dedicated career track record spanning precision manufacturing, 3D product visualization, commercial motion graphics, and strategic institutional multimedia.</span>
+        </p>
+
+        <!-- Category Filters -->
+        <div class="mt-7 flex flex-wrap justify-center gap-2" id="timeline-filters">
+          <button onclick="filterTimeline('all')" class="timeline-filter-btn active bg-cyan-500 text-slate-950 font-bold px-3.5 py-1.5 rounded-xl text-xs sm:text-sm border border-cyan-400 shadow-lg shadow-cyan-500/20 transition" data-tfilter="all">
+            <span class="lang-id">Semua Milestone</span><span class="lang-en hidden">All Milestones</span>
+          </button>
+          <button onclick="filterTimeline('product_3d')" class="timeline-filter-btn bg-slate-900/80 text-slate-300 font-semibold px-3.5 py-1.5 rounded-xl text-xs sm:text-sm border border-slate-800 hover:border-slate-700 hover:text-white transition" data-tfilter="product_3d">
+            <span class="lang-id">3D Product</span><span class="lang-en hidden">3D Product</span>
+          </button>
+          <button onclick="filterTimeline('motion')" class="timeline-filter-btn bg-slate-900/80 text-slate-300 font-semibold px-3.5 py-1.5 rounded-xl text-xs sm:text-sm border border-slate-800 hover:border-slate-700 hover:text-white transition" data-tfilter="motion">
+            <span class="lang-id">Motion Graphic</span><span class="lang-en hidden">Motion Graphic</span>
+          </button>
+          <button onclick="filterTimeline('career')" class="timeline-filter-btn bg-slate-900/80 text-slate-300 font-semibold px-3.5 py-1.5 rounded-xl text-xs sm:text-sm border border-slate-800 hover:border-slate-700 hover:text-white transition" data-tfilter="career">
+            <span class="lang-id">Karier & Edukasi</span><span class="lang-en hidden">Career & Academic</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- ================= 2-COLUMN STAGGERED TIMELINE CONTAINER ================= -->
+      <div class="max-w-5xl mx-auto relative mt-8 pb-4" id="timeline-cards-container">
+        <!-- Rendered dynamically with milestones -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SKILLS & SOFTWARE ================= -->
+  <section id="skills" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <h2 class="text-xs font-bold text-cyan-400 uppercase tracking-widest">
+        <span class="lang-id">Kemampuan Teknis</span><span class="lang-en hidden">Technical Skills</span>
+      </h2>
+      <h3 class="text-3xl font-black text-white mt-1">
+        <span class="lang-id">Keahlian & Penguasaan Software</span><span class="lang-en hidden">Skills & Software Mastery</span>
+      </h3>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Core Skills -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 space-y-6">
+        <h4 class="text-lg font-bold text-white flex items-center gap-2">
+          <i class="fa-solid fa-cube text-cyan-400"></i>
+          <span class="lang-id">Keahlian Utama</span><span class="lang-en hidden">Core Capabilities</span>
+        </h4>
+
+        <div class="flex flex-wrap gap-2.5">
+          <span class="px-3 py-2 bg-slate-950 border border-slate-800 rounded-xl text-sm font-medium text-slate-200 hover:border-cyan-400 transition">3D Modeling</span>
+          <span class="px-3 py-2 bg-slate-950 border border-slate-800 rounded-xl text-sm font-medium text-slate-200 hover:border-cyan-400 transition">3D Texturing</span>
+          <span class="px-3 py-2 bg-slate-950 border border-slate-800 rounded-xl text-sm font-medium text-slate-200 hover:border-cyan-400 transition">3D Animation</span>
+          <span class="px-3 py-2 bg-slate-950 border border-slate-800 rounded-xl text-sm font-medium text-slate-200 hover:border-cyan-400 transition">3D Rendering</span>
+          <span class="px-3 py-2 bg-slate-950 border border-slate-800 rounded-xl text-sm font-medium text-slate-200 hover:border-cyan-400 transition">Motion Graphic</span>
+          <span class="px-3 py-2 bg-slate-950 border border-slate-800 rounded-xl text-sm font-medium text-slate-200 hover:border-cyan-400 transition">Design Graphic</span>
+          <span class="px-3 py-2 bg-slate-950 border border-slate-800 rounded-xl text-sm font-medium text-slate-200 hover:border-cyan-400 transition">Video Editor</span>
+          <span class="px-3 py-2 bg-slate-950 border border-slate-800 rounded-xl text-sm font-medium text-slate-200 hover:border-cyan-400 transition">Photo Editor</span>
+          <span class="px-3 py-2 bg-slate-950 border border-slate-800 rounded-xl text-sm font-medium text-slate-200 hover:border-cyan-400 transition">Layouting</span>
+          <span class="px-3 py-2 bg-slate-950 border border-slate-800 rounded-xl text-sm font-medium text-slate-200 hover:border-cyan-400 transition">Digital Imaging</span>
+          <span class="px-3 py-2 bg-slate-950 border border-slate-800 rounded-xl text-sm font-medium text-slate-200 hover:border-cyan-400 transition">Painting</span>
+        </div>
+      </div>
+
+      <!-- Software Mastery -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 space-y-6">
+        <h4 class="text-lg font-bold text-white flex items-center gap-2">
+          <i class="fa-solid fa-laptop-code text-cyan-400"></i>
+          <span class="lang-id">Software & Alat</span><span class="lang-en hidden">Software & Tools</span>
+        </h4>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs sm:text-sm font-medium text-slate-300">
+          <div class="p-3 bg-slate-950 border border-slate-800 rounded-xl flex items-center gap-2">
+            <i class="fa-solid fa-shapes text-cyan-400"></i> 3DS Max
+          </div>
+          <div class="p-3 bg-slate-950 border border-slate-800 rounded-xl flex items-center gap-2">
+            <i class="fa-solid fa-lightbulb text-amber-400"></i> Keyshot
+          </div>
+          <div class="p-3 bg-slate-950 border border-slate-800 rounded-xl flex items-center gap-2">
+            <i class="fa-solid fa-paintbrush text-rose-400"></i> Substance Painter
+          </div>
+          <div class="p-3 bg-slate-950 border border-slate-800 rounded-xl flex items-center gap-2">
+            <i class="fa-solid fa-camera-rotate text-emerald-400"></i> D5 Render
+          </div>
+          <div class="p-3 bg-slate-950 border border-slate-800 rounded-xl flex items-center gap-2">
+            <i class="fa-solid fa-film text-purple-400"></i> After Effects
+          </div>
+          <div class="p-3 bg-slate-950 border border-slate-800 rounded-xl flex items-center gap-2">
+            <i class="fa-solid fa-video text-violet-400"></i> Premiere Pro
+          </div>
+          <div class="p-3 bg-slate-950 border border-slate-800 rounded-xl flex items-center gap-2">
+            <i class="fa-solid fa-image text-blue-400"></i> Photoshop
+          </div>
+          <div class="p-3 bg-slate-950 border border-slate-800 rounded-xl flex items-center gap-2">
+            <i class="fa-solid fa-vector-square text-orange-400"></i> Illustrator
+          </div>
+          <div class="p-3 bg-slate-950 border border-slate-800 rounded-xl flex items-center gap-2">
+            <i class="fa-solid fa-music text-pink-400"></i> Studio One
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PORTOFOLIO (GAMBAR & VIDEO) ================= -->
+  <section id="portfolio" class="py-20 bg-slate-900/30 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <h2 class="text-xs font-bold text-cyan-400 uppercase tracking-widest">
+          <span class="lang-id">Karya Terbaik</span><span class="lang-en hidden">Featured Works</span>
+        </h2>
+        <h3 class="text-3xl font-black text-white mt-1">
+          <span class="lang-id">Galeri Portofolio 3D & Video</span><span class="lang-en hidden">3D & Video Portfolio Gallery</span>
+        </h3>
+        <p class="text-slate-400 text-sm mt-2">
+          <span class="lang-id">Kumpulan hasil karya terbaik dalam visual 3D produk, motion graphic, dan multimedia.</span>
+          <span class="lang-en hidden">Curated best works in 3D product rendering, motion graphics, and commercial multimedia.</span>
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="flex justify-center gap-2 mb-10">
+        <button onclick="filterWorks('all')" class="port-filter-btn active bg-cyan-500 text-slate-950 text-xs sm:text-sm font-bold px-4 py-2 rounded-lg transition" data-filter="all">
+          <span class="lang-id">Semua Karya</span><span class="lang-en hidden">All Works</span>
+        </button>
+        <button onclick="filterWorks('gambar')" class="port-filter-btn bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-300 text-xs sm:text-sm font-semibold px-4 py-2 rounded-lg transition" data-filter="gambar">
+          <span class="lang-id">3D & Gambar</span><span class="lang-en hidden">3D & Images</span>
+        </button>
+        <button onclick="filterWorks('video')" class="port-filter-btn bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-300 text-xs sm:text-sm font-semibold px-4 py-2 rounded-lg transition" data-filter="video">
+          <span class="lang-id">Video & 2D/3D Motion</span><span class="lang-en hidden">Video & Motion</span>
+        </button>
+      </div>
+
+      <!-- Portfolio Items Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="portfolio-grid">
+        
+        <!-- ============================================================== -->
+        <!-- ITEM 1: 3D Image (Product Render) - 30 IMAGES SLIDER & CLICK -->
+        <!-- ============================================================== -->
+        <div class="work-card gambar bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden group hover:border-cyan-400/60 transition duration-300 flex flex-col shadow-xl" data-slider-id="slider1">
+          <!-- Slider Viewport -->
+          <div class="relative aspect-video overflow-hidden bg-slate-950 cursor-pointer" onclick="openLightboxFromSlider('slider1')">
+            
+            <!-- Active Image Container -->
+            <img id="slider1-img" 
+                 src="Page1-1.jpg" 
+                 onerror="this.src=sliderData.slider1.images[sliderData.slider1.currentIndex].fallback"
+                 alt="3D Design Product" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-slate-950/40 pointer-events-none"></div>
+
+            <!-- Top Badges -->
+            <div class="absolute top-3 left-3 right-3 flex items-center justify-between pointer-events-none z-10">
+              <span class="bg-slate-950/85 backdrop-blur-md text-[11px] font-semibold text-cyan-400 px-2.5 py-1 rounded-md border border-cyan-500/20 shadow">
+                <i class="fa-solid fa-cube mr-1"></i> 3D Design Product
+              </span>
+              <span class="bg-slate-950/85 backdrop-blur-md text-[11px] font-mono font-bold text-white px-2.5 py-1 rounded-md border border-slate-700 shadow">
+                <span id="slider1-counter" class="text-cyan-400">01</span> / 30
+              </span>
+            </div>
+
+            <!-- Slider Prev/Next Controls -->
+            <button onclick="event.stopPropagation(); changeSlide('slider1', -1)" aria-label="Previous" class="absolute left-2.5 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-slate-950/80 hover:bg-cyan-500 text-white hover:text-slate-950 border border-slate-700 hover:border-cyan-400 flex items-center justify-center transition backdrop-blur-sm z-20 shadow-md">
+              <i class="fa-solid fa-chevron-left text-xs"></i>
+            </button>
+            <button onclick="event.stopPropagation(); changeSlide('slider1', 1)" aria-label="Next" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-slate-950/80 hover:bg-cyan-500 text-white hover:text-slate-950 border border-slate-700 hover:border-cyan-400 flex items-center justify-center transition backdrop-blur-sm z-20 shadow-md">
+              <i class="fa-solid fa-chevron-right text-xs"></i>
+            </button>
+
+            <!-- Bottom Prompt Tag -->
+            <div class="absolute bottom-3 right-3 z-10">
+              <span class="bg-slate-950/80 text-[10px] text-slate-300 px-2 py-1 rounded border border-slate-700 flex items-center gap-1 backdrop-blur-sm hover:text-cyan-400 transition">
+                <i class="fa-solid fa-expand text-[10px]"></i>
+                <span class="lang-id">Buka Galeri (30)</span><span class="lang-en hidden">Open Gallery (30)</span>
+              </span>
+            </div>
+
+            <div class="absolute bottom-3 left-3 right-32 truncate z-10 pointer-events-none">
+              <p id="slider1-caption" class="text-[11px] text-slate-200 font-medium truncate drop-shadow">
+                Emily All Product
+              </p>
+            </div>
+          </div>
+
+          <!-- 30 Slider Dots -->
+          <div class="px-4 py-2 border-b border-slate-800/80 bg-slate-950/30 flex items-center justify-between">
+            <div class="flex items-center gap-1 overflow-x-auto" id="slider1-dots">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h4 class="font-bold text-white text-base">Emily, Norge Appliance & OONew</h4>
+              <p class="text-xs text-slate-400 mt-1 leading-relaxed">
+                <span class="lang-id">Visualisasi 3D produk 3D modeling, texturing, lighting dengan Keyshot studio Rendering dengan hasil maksimal untuk keperluan kemasan dan promosi.</span>
+                <span class="lang-en hidden">3D product visualization covering 3D modeling, texturing, and Keyshot studio lighting rendering with maximum quality for packaging and promotional needs.</span>
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
+              <button onclick="openLightboxFromSlider('slider1')" class="text-cyan-400 hover:text-cyan-300 font-medium flex items-center gap-1 transition">
+                <span class="lang-id">Lihat 30 Foto Lightbox</span><span class="lang-en hidden">View 30 Lightbox Photos</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </button>
+              <span class="text-[11px] text-slate-500">30 Render Images</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ITEM 2: Video (Embedded YouTube/Motion Showreel) -->
+        <div class="work-card video bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden group hover:border-cyan-400/60 transition duration-300 flex flex-col shadow-xl">
+          <div class="relative aspect-video bg-black">
+            <iframe class="w-full h-full" 
+                    src="https://www.youtube.com/embed/j5YjImpL_3k?si=akmz9hoQOovrZFm3" 
+                    title="3D Animation Showreel" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[10px] uppercase font-bold text-rose-400 bg-rose-950/60 border border-rose-800 px-2 py-0.5 rounded">3D Animation Product</span>
+              <h4 class="font-bold text-white text-base mt-2">
+                <span class="lang-id">Iklan Komersial Produk Animasi 3D</span>
+                <span class="lang-en hidden">3D Animated Commercial Product Ads</span>
+              </h4>
+              <p class="text-xs text-slate-400 mt-1">
+                <span class="lang-id">Akumulasi proyek animasi 3d yang dipadukan dengan real video dari beberapa brand untuk keperluan promosi.</span>
+                <span class="lang-en hidden">Compilation of commercial 3D animation projects blended with live-action footage across multiple brands for promotional campaigns.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================================================== -->
+        <!-- ITEM 3: 3D Image (Texture & Hard Surface) - 30 IMAGES SLIDER -->
+        <!-- ============================================================== -->
+        <div class="work-card gambar bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden group hover:border-cyan-400/60 transition duration-300 flex flex-col shadow-xl" data-slider-id="slider3">
+          <!-- Slider Viewport -->
+          <div class="relative aspect-video overflow-hidden bg-slate-950 cursor-pointer" onclick="openLightboxFromSlider('slider3')">
+            <img id="slider3-img" 
+                 src="Page3-1.jpg" 
+                 onerror="this.src=sliderData.slider3.images[sliderData.slider3.currentIndex].fallback"
+                 alt="Camera Product 3D" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-slate-950/40 pointer-events-none"></div>
+
+            <!-- Top Badges -->
+            <div class="absolute top-3 left-3 right-3 flex items-center justify-between pointer-events-none z-10">
+              <span class="bg-slate-950/85 backdrop-blur-md text-[11px] font-semibold text-cyan-400 px-2.5 py-1 rounded-md border border-cyan-500/20 shadow">
+                <i class="fa-solid fa-shapes mr-1"></i> 3D Design Product
+              </span>
+              <span class="bg-slate-950/85 backdrop-blur-md text-[11px] font-mono font-bold text-white px-2.5 py-1 rounded-md border border-slate-700 shadow">
+                <span id="slider3-counter" class="text-cyan-400">01</span> / 30
+              </span>
+            </div>
+
+            <!-- Slider Prev/Next Controls -->
+            <button onclick="event.stopPropagation(); changeSlide('slider3', -1)" aria-label="Previous" class="absolute left-2.5 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-slate-950/80 hover:bg-cyan-500 text-white hover:text-slate-950 border border-slate-700 hover:border-cyan-400 flex items-center justify-center transition backdrop-blur-sm z-20 shadow-md">
+              <i class="fa-solid fa-chevron-left text-xs"></i>
+            </button>
+            <button onclick="event.stopPropagation(); changeSlide('slider3', 1)" aria-label="Next" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-slate-950/80 hover:bg-cyan-500 text-white hover:text-slate-950 border border-slate-700 hover:border-cyan-400 flex items-center justify-center transition backdrop-blur-sm z-20 shadow-md">
+              <i class="fa-solid fa-chevron-right text-xs"></i>
+            </button>
+
+            <!-- Bottom Prompt Tag -->
+            <div class="absolute bottom-3 right-3 z-10">
+              <span class="bg-slate-950/80 text-[10px] text-slate-300 px-2 py-1 rounded border border-slate-700 flex items-center gap-1 backdrop-blur-sm hover:text-cyan-400 transition">
+                <i class="fa-solid fa-expand text-[10px]"></i>
+                <span class="lang-id">Buka Galeri (30)</span><span class="lang-en hidden">Open Gallery (30)</span>
+              </span>
+            </div>
+
+            <div class="absolute bottom-3 left-3 right-32 truncate z-10 pointer-events-none">
+              <p id="slider3-caption" class="text-[11px] text-slate-200 font-medium truncate drop-shadow">
+                Inti Baby All Product
+              </p>
+            </div>
+          </div>
+
+          <!-- 30 Slider Dots -->
+          <div class="px-4 py-2 border-b border-slate-800/80 bg-slate-950/30 flex items-center justify-between">
+            <div class="flex items-center gap-1 overflow-x-auto" id="slider3-dots">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h4 class="font-bold text-white text-base">Inti Baby, Babyhood, Sucvent & We Are Mother</h4>
+              <p class="text-xs text-slate-400 mt-1 leading-relaxed">
+                <span class="lang-id">3D modeling, unwrap map, PBR texturing & high quality rendering detail model mekanikal, angle lighting dengan hasil render maksimal.</span>
+                <span class="lang-en hidden">3D modeling, UV unwrapping, PBR texturing & high-quality rendering with detailed mechanical models and studio lighting angles.</span>
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
+              <button onclick="openLightboxFromSlider('slider3')" class="text-cyan-400 hover:text-cyan-300 font-medium flex items-center gap-1 transition">
+                <span class="lang-id">Lihat 30 Foto Lightbox</span><span class="lang-en hidden">View 30 Lightbox Photos</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </button>
+              <span class="text-[11px] text-slate-500">30 Render Images</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ITEM 4: Video (HTML5 Native Video Player) -->
+        <div class="work-card video bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden group hover:border-cyan-400/60 transition duration-300 flex flex-col shadow-xl">
+          <div class="relative aspect-video bg-black flex items-center justify-center">
+            <iframe class="w-full h-full" 
+                    src="https://www.youtube-nocookie.com/embed/oPSfAaBV6m4?si=iS_jvktPWf-Z_vdF" 
+                    title="Portfolio Film Animasi 3D"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+            </iframe>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[10px] uppercase font-bold text-rose-400 bg-rose-950/60 border border-rose-800 px-2 py-0.5 rounded">3D Animation Film</span>
+              <h4 class="font-bold text-white text-base mt-2">Indonesian Aviation Heritage</h4>
+              <p class="text-xs text-slate-400 mt-1">
+                <span class="lang-id">Video informasi animasi 3d dari proyek tugas akhir skripsi perkuliahan tahun 2020.</span>
+                <span class="lang-en hidden">Informational 3D animated short film created for my 2020 undergraduate thesis project.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================================================== -->
+        <!-- ITEM 5: 3D Image (Product Drumset / Interior) - 12 IMAGES SLIDER -->
+        <!-- ============================================================== -->
+        <div class="work-card gambar bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden group hover:border-cyan-400/60 transition duration-300 flex flex-col shadow-xl" data-slider-id="slider5">
+          <!-- Slider Viewport -->
+          <div class="relative aspect-video overflow-hidden bg-slate-950 cursor-pointer" onclick="openLightboxFromSlider('slider5')">
+            <img id="slider5-img" 
+                 src="Page5-1.jpg" 
+                 onerror="this.src=sliderData.slider5.images[sliderData.slider5.currentIndex].fallback"
+                 alt="Spatial Render" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-slate-950/40 pointer-events-none"></div>
+
+            <!-- Top Badges -->
+            <div class="absolute top-3 left-3 right-3 flex items-center justify-between pointer-events-none z-10">
+              <span class="bg-slate-950/85 backdrop-blur-md text-[11px] font-semibold text-cyan-400 px-2.5 py-1 rounded-md border border-cyan-500/20 shadow">
+                <i class="fa-solid fa-camera-rotate mr-1"></i> 3D Design Product
+              </span>
+              <span class="bg-slate-950/85 backdrop-blur-md text-[11px] font-mono font-bold text-white px-2.5 py-1 rounded-md border border-slate-700 shadow">
+                <span id="slider5-counter" class="text-cyan-400">01</span> / 12
+              </span>
+            </div>
+
+            <!-- Slider Prev/Next Controls -->
+            <button onclick="event.stopPropagation(); changeSlide('slider5', -1)" aria-label="Previous" class="absolute left-2.5 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-slate-950/80 hover:bg-cyan-500 text-white hover:text-slate-950 border border-slate-700 hover:border-cyan-400 flex items-center justify-center transition backdrop-blur-sm z-20 shadow-md">
+              <i class="fa-solid fa-chevron-left text-xs"></i>
+            </button>
+            <button onclick="event.stopPropagation(); changeSlide('slider5', 1)" aria-label="Next" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-slate-950/80 hover:bg-cyan-500 text-white hover:text-slate-950 border border-slate-700 hover:border-cyan-400 flex items-center justify-center transition backdrop-blur-sm z-20 shadow-md">
+              <i class="fa-solid fa-chevron-right text-xs"></i>
+            </button>
+
+            <!-- Bottom Prompt Tag -->
+            <div class="absolute bottom-3 right-3 z-10">
+              <span class="bg-slate-950/80 text-[10px] text-slate-300 px-2 py-1 rounded border border-slate-700 flex items-center gap-1 backdrop-blur-sm hover:text-cyan-400 transition">
+                <i class="fa-solid fa-expand text-[10px]"></i>
+                <span class="lang-id">Buka Galeri (12)</span><span class="lang-en hidden">Open Gallery (12)</span>
+              </span>
+            </div>
+
+            <div class="absolute bottom-3 left-3 right-32 truncate z-10 pointer-events-none">
+              <p id="slider5-caption" class="text-[11px] text-slate-200 font-medium truncate drop-shadow">
+                Sonor SQ2 Black
+              </p>
+            </div>
+          </div>
+
+          <!-- 12 Slider Dots -->
+          <div class="px-4 py-2 border-b border-slate-800/80 bg-slate-950/30 flex items-center justify-between">
+            <div class="flex items-center gap-1 overflow-x-auto" id="slider5-dots">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h4 class="font-bold text-white text-base">Drum Space Explain</h4>
+              <p class="text-xs text-slate-400 mt-1 leading-relaxed">
+                <span class="lang-id">Merupakan proyek individual untuk keperluan melatih skill 3d modeling, texturing, lighting & rendering.</span>
+                <span class="lang-en hidden">An individual study project built to sharpen 3D modeling, texturing, lighting, and rendering skills.</span>
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
+              <button onclick="openLightboxFromSlider('slider5')" class="text-cyan-400 hover:text-cyan-300 font-medium flex items-center gap-1 transition">
+                <span class="lang-id">Lihat 12 Foto Lightbox</span><span class="lang-en hidden">View 12 Lightbox Photos</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </button>
+              <span class="text-[11px] text-slate-500">12 Render Images</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ITEM 6: Video (AR Filter / Entertainment Promo) -->
+        <div class="work-card video bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden group hover:border-cyan-400/60 transition duration-300 flex flex-col shadow-xl">
+          <div class="relative aspect-video bg-black flex items-center justify-center">
+            <iframe class="w-full h-full" 
+                    src="https://www.youtube-nocookie.com/embed/fhTfSQSPMB8?si=bf0jtGPd5tUxeigg" 
+                    title="Portfolio Video AR"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+            </iframe>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[10px] uppercase font-bold text-rose-400 bg-rose-950/60 border border-rose-800 px-2 py-0.5 rounded">Motion Graphic AR</span>
+              <h4 class="font-bold text-white text-base mt-2">AR Filter / Entertainment Promo</h4>
+              <p class="text-xs text-slate-400 mt-1">
+                <span class="lang-id">Proyek motion graphic untuk keperluan AR filter Instagram sebagai bentuk promosi gaya baru untuk brand.</span>
+                <span class="lang-en hidden">Motion graphic assets built for Instagram AR filters as a modern interactive promotional format for brands.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= KONTAK ================= -->
+  <section id="contact" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <h2 class="text-xs font-bold text-cyan-400 uppercase tracking-widest">
+        <span class="lang-id">Mulai Kerja Sama</span><span class="lang-en hidden">Get in Touch</span>
+      </h2>
+      <h3 class="text-3xl font-black text-white mt-1">
+        <span class="lang-id">Kontak & Kolaborasi</span><span class="lang-en hidden">Contact & Collaboration</span>
+      </h3>
+      <p class="text-slate-400 text-sm mt-2">
+        <span class="lang-id">Siap mewujudkan visual 3D dan animasi berkualitas tinggi untuk brand Anda.</span>
+        <span class="lang-en hidden">Ready to bring top-notch 3D visuals and motion graphics to life for your brand.</span>
+      </p>
+    </div>
+
+    <!-- Quick Contact Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+      <!-- Email -->
+      <a href="mailto:mochridwaan07@gmail.com" class="p-5 bg-slate-900 border border-slate-800 rounded-2xl flex flex-col items-center text-center hover:border-cyan-400 transition">
+        <i class="fa-regular fa-envelope text-2xl text-cyan-400 mb-2"></i>
+        <span class="text-xs text-slate-500">Email</span>
+        <span class="text-xs font-bold text-white mt-1 truncate max-w-full">mochridwaan07@gmail.com</span>
+      </a>
+
+      <!-- WhatsApp -->
+      <a href="https://wa.me/6281382588741" target="_blank" class="p-5 bg-slate-900 border border-slate-800 rounded-2xl flex flex-col items-center text-center hover:border-emerald-400 transition">
+        <i class="fa-brands fa-whatsapp text-2xl text-emerald-400 mb-2"></i>
+        <span class="text-xs text-slate-500">WhatsApp</span>
+        <span class="text-xs font-bold text-white mt-1">+62 813-8258-8741</span>
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/moch_ridwaan/" target="_blank" class="p-5 bg-slate-900 border border-slate-800 rounded-2xl flex flex-col items-center text-center hover:border-pink-400 transition">
+        <i class="fa-brands fa-instagram text-2xl text-pink-400 mb-2"></i>
+        <span class="text-xs text-slate-500">Instagram</span>
+        <span class="text-xs font-bold text-white mt-1">@moch_ridwaan</span>
+      </a>
+
+      <!-- TikTok -->
+      <a href="https://www.tiktok.com/@moch_ridwaan" target="_blank" class="p-5 bg-slate-900 border border-slate-800 rounded-2xl flex flex-col items-center text-center hover:border-white transition">
+        <i class="fa-brands fa-tiktok text-2xl text-slate-200 mb-2"></i>
+        <span class="text-xs text-slate-500">TikTok</span>
+        <span class="text-xs font-bold text-white mt-1">@moch_ridwaan</span>
+      </a>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="max-w-2xl mx-auto bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8">
+      <form onsubmit="event.preventDefault(); alert(currentLang === 'en' ? 'Message sent successfully!' : 'Pesan telah terkirim!');" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-slate-400 mb-1">
+            <span class="lang-id">Nama Lengkap</span><span class="lang-en hidden">Full Name</span>
+          </label>
+          <input type="text" required placeholder="Sudirman" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400" />
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-400 mb-1">
+            <span class="lang-id">Email / WhatsApp</span><span class="lang-en hidden">Email / WhatsApp</span>
+          </label>
+          <input type="text" required placeholder="name@company.com" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400" />
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-400 mb-1">
+            <span class="lang-id">Kebutuhan Proyek (3D / Motion / Visual)</span>
+            <span class="lang-en hidden">Project Brief (3D / Motion / Visual)</span>
+          </label>
+          <textarea id="contact-brief-input" rows="4" required placeholder="Tuliskan detail proyek Anda..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold py-3.5 rounded-xl transition shadow-lg shadow-cyan-500/20">
+          <span class="lang-id">Kirim Pesan</span><span class="lang-en hidden">Send Message</span>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="py-8 border-t border-slate-800/80 text-center text-xs text-slate-500">
+    <div class="flex justify-center items-center gap-4 mb-2 text-slate-400 text-base">
+      <a href="https://www.instagram.com/moch_ridwaan/" class="hover:text-cyan-400"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@moch_ridwaan" class="hover:text-cyan-400"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://www.linkedin.com/in/muhamad-ridwan-095305288/"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <p>&copy; 2026 Muhamad Ridwan. All Rights Reserved.</p>
+  </footer>
+
+  <!-- ================= FULLSCREEN 30-IMAGE LIGHTBOX MODAL ================= -->
+  <div id="lightbox-modal" class="fixed inset-0 z-[100] bg-slate-950/95 backdrop-blur-xl hidden flex-col justify-between select-none">
+    <!-- Lightbox Header -->
+    <div class="h-16 px-4 sm:px-6 border-b border-slate-800 flex items-center justify-between text-white bg-slate-950/80">
+      <div>
+        <h3 id="lightbox-title" class="font-bold text-sm sm:text-base text-white flex items-center gap-2">
+          <span class="text-cyan-400">Emily & Norge 3D Design</span>
+          <span class="text-slate-500">•</span>
+          <span id="lightbox-img-title" class="text-xs sm:text-sm font-normal text-slate-300">Appliance</span>
+        </h3>
+        <p id="lightbox-software" class="text-[11px] text-cyan-400/80 font-mono">3DS Max • Keyshot • Photoshop</p>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <span class="text-xs font-mono font-bold bg-slate-900 border border-slate-800 px-3 py-1 rounded-full text-slate-300">
+          <span id="lightbox-counter" class="text-cyan-400">1</span> / 30
+        </span>
+        <button onclick="closeLightbox()" class="p-2 rounded-lg bg-slate-900 hover:bg-rose-500/20 text-slate-300 hover:text-rose-400 border border-slate-800 transition">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Lightbox Main Stage -->
+    <div class="relative flex-1 flex items-center justify-center p-3 sm:p-6 overflow-hidden">
+      <!-- Prev Button -->
+      <button onclick="lightboxNavigate(-1)" class="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-slate-900/80 hover:bg-cyan-500 text-white hover:text-slate-950 border border-slate-700 hover:border-cyan-400 flex items-center justify-center transition backdrop-blur-md z-30 shadow-2xl">
+        <i class="fa-solid fa-chevron-left text-lg"></i>
+      </button>
+
+      <!-- Center Image -->
+      <div class="max-w-5xl max-h-[72vh] flex items-center justify-center">
+        <img id="lightbox-current-img" 
+             src="" 
+             alt="High resolution 3D render" 
+             class="max-h-[72vh] max-w-full w-auto object-contain rounded-xl shadow-2xl border border-slate-800/80" />
+      </div>
+
+      <!-- Next Button -->
+      <button onclick="lightboxNavigate(1)" class="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-slate-900/80 hover:bg-cyan-500 text-white hover:text-slate-950 border border-slate-700 hover:border-cyan-400 flex items-center justify-center transition backdrop-blur-md z-30 shadow-2xl">
+        <i class="fa-solid fa-chevron-right text-lg"></i>
+      </button>
+    </div>
+
+    <!-- Lightbox Bottom: Description & 12 Thumbnails -->
+    <div class="bg-slate-950/90 border-t border-slate-800 p-3 sm:p-4">
+      <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div class="text-left w-full sm:w-auto max-w-xl">
+          <h5 id="lightbox-desc-title" class="font-bold text-white text-sm">Product Detail</h5>
+          <p id="lightbox-desc-text" class="text-xs text-slate-400 line-clamp-1 sm:line-clamp-2">
+            Visualisasi 3D studio render dengan pencahayaan softbox Keyshot.
+          </p>
+        </div>
+
+        <!-- 12 Thumbnail Carousel -->
+        <div class="flex items-center gap-1.5 overflow-x-auto max-w-full py-1 no-scrollbar" id="lightbox-thumbs">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MILESTONE DETAIL INSPECTION MODAL ================= -->
+  <div id="milestone-modal" class="fixed inset-0 z-[110] bg-slate-950/90 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl flex flex-col">
+      <div class="p-6 border-b border-slate-800/80 flex items-start justify-between">
+        <div>
+          <div class="flex items-center gap-2 mb-2">
+            <span id="modal-period" class="text-xs font-mono font-bold text-cyan-400 bg-cyan-950/70 border border-cyan-800/60 px-2.5 py-0.5 rounded-full">
+              2021 — Saat ini
+            </span>
+            <span id="modal-category" class="text-xs font-medium text-slate-400">
+              Karier / Posisi Utama
+            </span>
+          </div>
+          <h3 id="modal-role" class="text-xl sm:text-2xl font-black text-white">
+            3D Artist & Visualizer
+          </h3>
+          <p id="modal-entity" class="text-sm font-semibold text-cyan-400 mt-0.5">
+            Paninti Hub
+          </p>
+        </div>
+        <button onclick="closeMilestoneModal()" class="p-2 rounded-xl bg-slate-950 border border-slate-800 text-slate-400 hover:text-white hover:border-slate-700 transition">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
+
+      <div class="p-6 space-y-6 flex-1 text-left">
+        <div class="p-4 rounded-2xl bg-gradient-to-r from-cyan-950/50 via-slate-900 to-slate-900 border border-cyan-500/30 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center shrink-0">
+            <i class="fa-solid fa-award text-lg"></i>
+          </div>
+          <div>
+            <p class="text-[11px] uppercase tracking-wider font-semibold text-cyan-400">
+              <span class="lang-id">Pencapaian Utama / Dampak</span><span class="lang-en hidden">Key Achievement / Impact</span>
+            </p>
+            <h5 id="modal-impact" class="font-bold text-white text-sm sm:text-base mt-0.5">
+              70+ Model Produk Komersial & Render E-Commerce
+            </h5>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">
+            <span class="lang-id">Ringkasan Tugas & Peran</span><span class="lang-en hidden">Role Summary & Scope</span>
+          </h4>
+          <p id="modal-desc" class="text-sm text-slate-300 leading-relaxed">
+            Deskripsi peran...
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">
+            <span class="lang-id">Hasil Kerja & Deliverables</span><span class="lang-en hidden">Key Deliverables & Outputs</span>
+          </h4>
+          <ul id="modal-deliverables" class="space-y-2.5"></ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2.5">
+            <span class="lang-id">Software & Tools</span><span class="lang-en hidden">Software & Production Pipeline</span>
+          </h4>
+          <div id="modal-tools" class="flex flex-wrap gap-2"></div>
+        </div>
+      </div>
+
+      <div class="p-4 sm:p-6 border-t border-slate-800 bg-slate-950/50 flex flex-wrap items-center justify-between gap-3">
+        <a href="#portfolio" onclick="closeMilestoneModal()" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1.5 transition">
+          <span class="lang-id">Lihat Karya di Galeri Portofolio</span><span class="lang-en hidden">Explore in Portfolio Gallery</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+        </a>
+        <button onclick="closeMilestoneModal()" class="bg-slate-800 hover:bg-slate-700 text-white font-medium text-xs px-5 py-2.5 rounded-xl transition">
+          <span class="lang-id">Tutup</span><span class="lang-en hidden">Close</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= JAVASCRIPT ================= -->
+  <script>
+    // 1. Dual Language Switcher (ID <-> EN)
+    let currentLang = 'id';
+
+    function toggleLanguage() {
+      currentLang = currentLang === 'id' ? 'en' : 'id';
+      
+      const idElements = document.querySelectorAll('.lang-id');
+      const enElements = document.querySelectorAll('.lang-en');
+      const indicator = document.getElementById('lang-indicator');
+      const indicatorMobile = document.getElementById('lang-indicator-mobile');
+      const briefInput = document.getElementById('contact-brief-input');
+
+      if (currentLang === 'en') {
+        idElements.forEach(el => el.classList.add('hidden'));
+        enElements.forEach(el => el.classList.remove('hidden'));
+        indicator.textContent = 'ID';
+        indicatorMobile.textContent = 'ID';
+        if (briefInput) briefInput.placeholder = 'Provide details about your project...';
+        document.documentElement.lang = 'en';
+      } else {
+        enElements.forEach(el => el.classList.add('hidden'));
+        idElements.forEach(el => el.classList.remove('hidden'));
+        indicator.textContent = 'EN';
+        indicatorMobile.textContent = 'EN';
+        if (briefInput) briefInput.placeholder = 'Tuliskan detail proyek Anda...';
+        document.documentElement.lang = 'id';
+      }
+
+      // Re-render dynamic timeline & update slider/lightbox language
+      if (typeof renderTimeline === 'function') {
+        renderTimeline(currentTimelineFilter);
+      }
+      ['slider1', 'slider3', 'slider5'].forEach(sId => {
+        if (typeof setSlide === 'function' && sliderData[sId]) {
+          setSlide(sId, sliderData[sId].currentIndex);
+        }
+      });
+      const lbModal = document.getElementById('lightbox-modal');
+      if (lbModal && !lbModal.classList.contains('hidden')) {
+        updateLightboxView();
+      }
+    }
+
+    // 2. Mobile Menu Toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // 3. Portfolio Category Filter
+    function filterWorks(category) {
+      const cards = document.querySelectorAll('.work-card');
+      const buttons = document.querySelectorAll('.port-filter-btn');
+
+      buttons.forEach(btn => {
+        if(btn.dataset.filter === category) {
+          btn.classList.add('bg-cyan-500', 'text-slate-950');
+          btn.classList.remove('bg-slate-900', 'text-slate-300');
+        } else {
+          btn.classList.remove('bg-cyan-500', 'text-slate-950');
+          btn.classList.add('bg-slate-900', 'text-slate-300');
+        }
+      });
+
+      cards.forEach(card => {
+        if (category === 'all') {
+          card.classList.remove('hidden');
+        } else if (card.classList.contains(category)) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // ==========================================
+    // 4. 16-IMAGE SLIDER & LIGHTBOX SYSTEM
+    // ==========================================
+    const sliderData = {
+      slider1: {
+        title: 'Emily, Norge & OONew 3D Design',
+        currentIndex: 0,
+        images: [
+          { local: 'Page1-1.jpg', fallback: 'https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=1200&q=80', title: 'Emily All Product', desc: 'Display seluruh rangkaian produk Emily unggulan 3D dalam satu panggung visual.', software: '3DS Max • Keyshot' },
+          { local: 'Page1-2.jpg', fallback: 'https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=1200&q=80', title: 'Norge All Product', desc: 'Display seluruh rangkaian produk Norge unggulan 3D dalam satu panggung visual.', software: '3DS Max • Keyshot' },
+          { local: 'Page1-3.jpg', fallback: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=80', title: 'OONew All Product', desc: 'Display seluruh rangkaian produk OONew unggulan 3D dalam satu panggung visual.', software: '3DS Max • Keyshot' },
+          { local: 'Page1-4.jpg', fallback: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=80', title: 'Emily UV Sterilizer 25L', desc: 'UV Sterilizer yang menggunakan proses sterilisasi 6 dimensi dengan 24 lampu UV.', software: '3DS Max • Keyshot' },
+          { local: 'Page1-5.jpg', fallback: 'https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=1200&q=80', title: 'Emily Airfryer 3.5L', desc: 'Ukuran besar yang dapat memasak banyak dengan penyebaran udara panas 360 derajat.', software: '3DS Max • Keyshot' },
+          { local: 'Page1-6.jpg', fallback: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=1200&q=80', title: 'Emily Airfryer 3L', desc: 'Airfryer dengan desain klasik yang mempunyai 3 fungsi utama serta cocok interior dapur modern-klasik.', software: '3DS Max • Keyshot' },
+          { local: 'Page1-7.jpg', fallback: 'https://images.unsplash.com/photo-1560343090-f0409e92791a?auto=format&fit=crop&w=1200&q=80', title: 'Emily Sterilizer 18L & 6L', desc: 'UV Sterilizer yang multi fungsi dan tersedia ukuran ringkas.', software: '3DS Max • Keyshot' },
+          { local: 'Page1-8.jpg', fallback: 'https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=1200&q=80', title: 'Emily Travel Multi Cooker', desc: 'Perpaduan desain ergonomis dan multifungsi untuk traveler tulen.', software: '3DS Max • Keyshot' },
+          { local: 'Page1-9.jpg', fallback: 'https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?auto=format&fit=crop&w=1200&q=80', title: 'Emily Humidifier 4L', desc: 'Desain tekstur frosted yang halus yang menyatu dengan interior putih sejut .', software: '3DS Max • Keyshot' },
+          { local: 'Page1-10.jpg', fallback: 'https://images.unsplash.com/photo-1543512214-318c7553f230?auto=format&fit=crop&w=1200&q=80', title: 'Emily UV Sterilizer & Dryer 16L', desc: 'Sterilizer dengan penutup bergerigih yang mampu menjaga kebersihan sampai 72 jam.', software: '3DS Max • Keyshot' },
+          { local: 'Page1-11.jpg', fallback: 'https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?auto=format&fit=crop&w=1200&q=80', title: 'Emily UV Sterilizer 26L', desc: 'Kapasitas lebih besar, mengedepankan desain bersih mengkilat dengan penutup transparan.', software: '3DS Max • Keyshot' },
+          { local: 'Page1-12.jpg', fallback: 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=1200&q=80', title: 'Emily Bottle Sterilizer', desc: 'Perpaduan clean design dengan warna putih sedikit akses kuning.', software: '3DS Max • Keyshot' },
+	  { local: 'Page1-13.jpg', fallback: 'https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?auto=format&fit=crop&w=1200&q=80', title: 'Emily Hotpot & Grill', desc: 'Memasak 2 jenis dalam 1 alat Multifungsi dengan desain Minimalis ringkas.', software: '3DS Max • Keyshot' },
+          { local: 'Page1-14.jpg', fallback: 'https://images.unsplash.com/photo-1543512214-318c7553f230?auto=format&fit=crop&w=1200&q=80', title: 'Emily Porridge and Steamer', desc: 'Alat masak dengan bentuk ringkas yang mempunyai 2 fungsi penting.', software: '3DS Max • Keyshot' },
+          { local: 'Page1-15.jpg', fallback: 'https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?auto=format&fit=crop&w=1200&q=80', title: 'Emily Lunch Box 2L', desc: ' Electric Lunch box dengan 3 ukuran yang mampu memasak dan wadah penyimpangan dengan model rantang.', software: '3DS Max • Keyshot' },
+	  { local: 'Page1-16.jpg', fallback: 'https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?auto=format&fit=crop&w=1200&q=80', title: 'Emily Lunch Box 1.4L', desc: 'Produk memasak dengan listrik yang minimalis dengan desain feminim.', software: '3DS Max • Keyshot' },
+	  { local: 'Page1-17.jpg', fallback: 'https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=1200&q=80', title: 'Emily Lunch Box 1L', desc: 'Dengan desain feminis minimalis lunch box ini sangat portable untuk daily.', software: '3DS Max • Keyshot' },
+          { local: 'Page1-18.jpg', fallback: 'https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=1200&q=80', title: 'Norge UV Dishdryer 45L', desc: 'Detail lekukan bodi ergonomis transparan dengan material ringan dan kokoh.', software: '3DS Max • Keyshot' },
+          { local: 'Page1-19.jpg', fallback: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=80', title: 'Norge UV Dishdryer 55L', desc: 'Wide angle desain pada produk ini mampu menyimpan alat makan yang lebih banyak.', software: '3DS Max • Keyshot' },
+          { local: 'Page1-20.jpg', fallback: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=80', title: 'Norge UV Dishdryer 52L Putih', desc: 'Desain ergonomis bentuk UV Dishsryer ini sangat estiteik untuk segala type dapur yang clean.', software: '3DS Max • Keyshot' },
+	  { local: 'Page1-21.jpg', fallback: 'https://images.unsplash.com/photo-1543512214-318c7553f230?auto=format&fit=crop&w=1200&q=80', title: 'Norge UV Dishdryer 52L Hitam', desc: 'Desain ergonomis bentuk UV Dishsryer ini sangat estiteik untuk tipe dapur industrial.', software: '3DS Max • Keyshot' },
+          { local: 'Page1-22.jpg', fallback: 'https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?auto=format&fit=crop&w=1200&q=80', title: 'Norge Rice Cooker', desc: 'Produk rice cooker low carno dengan bentuk yang super minimalis dengan warna monokrom silver.', software: '3DS Max • Keyshot' },
+          { local: 'Page1-23.jpg', fallback: 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=1200&q=80', title: 'Norge Scale Chooper 0.3L', desc: 'Salah 1 Scale food chooper dengan baterai yang mampu dibawa travel dengan keringkasannya.', software: '3DS Max • Keyshot 360' },
+	  { local: 'Page1-24.jpg', fallback: 'https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=1200&q=80', title: 'Norge Scale Chooper 1.2L', desc: 'Dengan ukuran yang lebih besar chooper mampu mencacah bahan makanan lebih cepat.', software: '3DS Max • Keyshot' },
+          { local: 'Page1-25.jpg', fallback: 'https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=1200&q=80', title: 'Norge Airfryer 2.5L', desc: 'Lekukan pada produk yang sangat halus ini mampu memasak makanan dengan daya listrik hanya 650W.', software: '3DS Max • Keyshot' },
+          { local: 'Page1-26.jpg', fallback: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=80', title: 'OONew Michelin 6 In 1', desc: 'Baby Food Processor tercanggih yang mempunyai fungsi 6 in 1 untuk mengolah MPASI.', software: '3DS Max • Keyshot' },
+	  { local: 'Page1-27.jpg', fallback: 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=1200&q=80', title: 'OONew UV Sterilizer', desc: 'Display yang sangat celan mempresentasikan fungsi alat ini sebagai sterilisasi.', software: '3DS Max • Keyshot 360' },
+	  { local: 'Page1-28.jpg', fallback: 'https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=1200&q=80', title: 'OONew Pettite Series', desc: 'Didesain di Perancis BabyPurée food processor yang simpel, ergonomi, ekonomis, & tahan lama.', software: '3DS Max • Keyshot' },
+          { local: 'Page1-29.jpg', fallback: 'https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=1200&q=80', title: 'OONew Soya Mint Green', desc: 'Produk pengolah MPASI dengan desain terbaru dengan kualitas yang sebih solid yang lebih Praktis.', software: '3DS Max • Keyshot' },
+          { local: 'Page1-30.jpg', fallback: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=80', title: 'OONew Soya Cream', desc: 'Produk pengolah MPASI dengan desain terbaru dengan kualitas yang sebih solid dengan warna cream.', software: '3DS Max • Keyshot' }
+        ]
+      },
+      slider3: {
+        title: 'Inti Baby, Babyhood, Sucvent & We Are Motherr',
+        currentIndex: 0,
+        images: [
+          { local: 'Page3-1.jpg', fallback: 'https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1200&q=80', title: 'Inti Baby All Product', desc: 'Display seluruh rangkaian produk Inti Baby unggulan 3D dalam satu panggung visual.', software: '3DS Max • Keyshot' },
+          { local: 'Page3-2.jpg', fallback: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=80', title: 'Babyhood All Product', desc: 'Display seluruh rangkaian produk Babyhood unggulan 3D dalam satu panggung visual.', software: '3DS Max • Keyshot' },
+          { local: 'Page3-3.jpg', fallback: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80', title: 'Sucvent All Product', desc: 'Display seluruh rangkaian produk Sucvent unggulan 3D dalam satu panggung visual.', software: '3DS Max • Keyshot' },
+          { local: 'Page3-4.jpg', fallback: 'https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1200&q=80', title: 'We Are Mother All Product', desc: 'Display seluruh rangkaian produk We Are Mother unggulan 3D dalam satu panggung visual.', software: '3DS Max • Keyshot' },
+          { local: 'Page3-5.jpg', fallback: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=1200&q=80', title: 'Inti Baby Rockin Chair', desc: 'Kursi goyang multifungsi dengan banyak mainan.', software: '3DS Max • Keyshot' },
+          { local: 'Page3-6.jpg', fallback: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80', title: 'Inti Baby UV Sterilizer 6L', desc: 'Desain model ultralight dengan lampu UV sedia dimanapun.', software: '3DS Max • Keyshot' },
+          { local: 'Page3-7.jpg', fallback: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80', title: 'Inti Baby Multifunctional UV 20L', desc: 'Mensteril sekaligus mengeringkan perlengkapan si kecil dengan praktis dengan ukuran sedang.', software: '3DS Max • Keyshot' },
+          { local: 'Page3-8.jpg', fallback: 'https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=1200&q=80', title: 'Inti Baby Multifunctional UV 26L', desc: 'Mensteril sekaligus mengeringkan peralatan si kecil dengan praktis dengan ukuran besar.', software: '3DS Max • Keyshot' },
+          { local: 'Page3-9.jpg', fallback: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80', title: 'Inti Baby Baby Food Processor', desc: 'Food proseccor banyak fungsi dengan layar besar memandu navigasi pengolahan.', software: '3DS Max • Keyshot' },
+          { local: 'Page3-10.jpg', fallback: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1200&q=80', title: 'Inti Baby Baby Food Processor', desc: 'Food proseccor multifungsi dengan wadah besar mampu mengolah makanan lebih banyak.', software: '3DS Max • Keyshot' },
+          { local: 'Page3-11.jpg', fallback: 'https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=1200&q=80', title: 'Inti Baby Bottle Sterilizer', desc: 'Wadah yang mampu memuat 6 botol sekaligus yang mampu mensterilkan botol susu dengan mudah.', software: '3DS Max • Keyshot' },
+          { local: 'Page3-12.jpg', fallback: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80', title: 'Inti Baby Bottle Warmer 6 in 1', desc: 'Penghangat botol ganda dengan fitur seperti deforst, milk warming, food heating dan sterilize.', software: '3DS Max • Keyshot' },
+	  { local: 'Page3-13.jpg', fallback: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=1200&q=80', title: 'Inti Baby Dino Silikon Brush', desc: 'Sikat botol set dengan desain dinosaurus multifungsi.', software: '3DS Max • Keyshot' },
+          { local: 'Page3-14.jpg', fallback: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80', title: 'Babyhood Baby verse Astro', desc: 'Kombinasi botol minus dengan background didalam pesawat luar angkasa.', software: '3DS Max • Keyshot' },
+          { local: 'Page3-15.jpg', fallback: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80', title: 'Babyhood Baby verse Star', desc: 'Botol dengan desain podium bertingkat dengan tirai bintang.', software: '3DS Max • Keyshot' },
+          { local: 'Page3-16.jpg', fallback: 'https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=1200&q=80', title: 'Babyhood Baby verse Cheese', desc: 'Jejeran Botol Baby Verse dengan background bintang tekstur keju.', software: '3DS Max • Keyshot' },
+          { local: 'Page3-17.jpg', fallback: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80', title: 'Babyhood Fish Bowl', desc: 'Wadah makanan anak dengan bentuk ikan dengan warna pastel, praktis dan ringan.', software: '3DS Max • Keyshot' },
+          { local: 'Page3-18.jpg', fallback: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1200&q=80', title: 'Babyhood Moro-moro Bowl', desc: 'Wadah makanan mungil dengan desain anti tumpah serta anti jatuh untuk belakar makan bayi.', software: '3DS Max • Keyshot' },
+          { local: 'Page3-19.jpg', fallback: 'https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=1200&q=80', title: 'Babyhood Moro-moro Red Bottle', desc: 'Botol minum anak dengan desain merah menyala disertai tali pegangan.', software: '3DS Max • Keyshot' },
+          { local: 'Page3-20.jpg', fallback: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80', title: 'Babyhood Moro-moro Brown Bottle', desc: 'Botol minum anak dengan desain cokelat muda disertai tali pegangan.', software: '3DS Max • Keyshot' },
+	  { local: 'Page3-21.jpg', fallback: 'https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=1200&q=80', title: 'Babyhood UV Sterilizer', desc: 'Produk unggulan pada masa covid-19 ini sukses sebagai anak sterilisasi andalan orang tua.', software: '3DS Max • Keyshot' },
+          { local: 'Page3-22.jpg', fallback: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80', title: 'Sucvent 120ml Glass Bottle', desc: 'Botol susu anti colic anak dengan ukuran sangat praktis berbahan kaca.', software: '3DS Max • Keyshot' },
+	  { local: 'Page3-23.jpg', fallback: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=1200&q=80', title: 'Sucvent 150ml PP Bottle', desc: 'Mempunyai bahan Polypropylene yang lebih ringan dan tentunya dengan fitur anti colic.', software: '33DS Max • Keyshot' },
+          { local: 'Page3-24.jpg', fallback: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80', title: 'Sucvent 150ml PPSU Bottle', desc: 'Polyphenylsulfone merupakan bahan yang tahan panas sampai 200 derajat dan tahan banting untuk botol susus anak.', software: '3DS Max • Keyshot' },
+          { local: 'Page3-25.jpg', fallback: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80', title: 'Sucvent 240ml PP Bottle', desc: 'Bahan Polypropylene yang lebih ringan dengan ukuran yang lebih besar.', software: '3DS Max • Keyshot' },
+          { local: 'Page3-26.jpg', fallback: 'https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=1200&q=80', title: 'Sucvent 240ml PPSU Bottle', desc: 'Botol ukuran besar dengan bahan polyphenylsulfone dengan fitur anti colic.', software: '3DS Max • Keyshot' },
+          { local: 'Page3-27.jpg', fallback: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80', title: 'Sucvent 300ml PPSU Bottle', desc: 'Botol susu polyphenylsulfone dengan ukuran sangat besar untuk balita dengan pegangan botol.', software: '3DS Max • Keyshot' },
+          { local: 'Page3-28.jpg', fallback: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1200&q=80', title: 'Sucvent 300ml PPSU Bottle Wide', desc: 'Botol susu polyphenylsulfone dengan ukuran sangat besar untuk balita dengan pegangan botol dengan sedotan.', software: '3DS Max • Keyshot' },
+          { local: 'Page3-29.jpg', fallback: 'https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=1200&q=80', title: 'We Are Mother W1', desc: 'Breast pump modern dengan banyak mode hisap dilengkapi lampu untuk mode malam.', software: '3DS Max • Keyshot' },
+          { local: 'Page3-30.jpg', fallback: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80', title: 'We Are Mother W1', desc: 'Breast pump modern dengan banyak mode hisap dengan desain praktis seperti bentuk telur.', software: '3DS Max • Keyshot' }
+        ]
+      },
+      slider5: {
+        title: 'Drum Space Explain',
+        currentIndex: 0,
+        images: [
+          { local: 'Page5-1.jpg', fallback: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80', title: 'Sonor SQ2 Black', desc: 'Pencahayaan atmosferik Industrial dengan dinding beton gelap.', descEn: 'Industrial atmospheric lighting with dark concrete walls.', software: '3DS Max • Keyshot' },
+          { local: 'Page5-2.jpg', fallback: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80', title: 'Sonor SQ2 Ice Blue', desc: 'Pencahayaan atmosferik Industrial dengan dinding beton gelap.', descEn: 'Industrial atmospheric lighting with dark concrete walls.', software: '3DS Max • Keyshot' },
+          { local: 'Page5-3.jpg', fallback: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=80', title: 'Sonor SQ2 Walnut', desc: 'Pencahayaan atmosferik Industrial dengan dinding beton gelap.', descEn: 'Industrial atmospheric lighting with dark concrete walls.', software: '3DS Max • Keyshot' },
+          { local: 'Page5-4.jpg', fallback: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80', title: 'Sonor SQ2 Acrylic', desc: 'Pencahayaan atmosferik Industrial dengan dinding beton gelap.', descEn: 'Industrial atmospheric lighting with dark concrete walls.', software: '3DS Max • Keyshot' },
+          { local: 'Page5-5.jpg', fallback: 'https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1200&q=80', title: 'Sonor SQ2', desc: 'Render sisi kanan.', descEn: 'Right-side perspective render.', software: '3DS Max • Keyshot' },
+          { local: 'Page5-6.jpg', fallback: 'https://images.unsplash.com/photo-1541123437800-1bb1317badc2?auto=format&fit=crop&w=1200&q=80', title: 'Sonor SQ2', desc: 'Render sisi bawah detail pedal drum.', descEn: 'Low-angle detail render of the bass drum pedal.', software: '3DS Max • Keyshot' },
+          { local: 'Page5-7.jpg', fallback: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80', title: 'Sonor SQ2', desc: 'Render sisi pov drummer.', descEn: 'Drummer point-of-view (POV) angle render.', software: '3DS Max • Keyshot' },
+          { local: 'Page5-8.jpg', fallback: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80', title: 'Sonor SQ2', desc: 'Render sisi atas.', descEn: 'Top-down overhead view render.', software: '3DS Max • Keyshot' },
+          { local: 'Page5-9.jpg', fallback: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80', title: 'Sonor SQ2', desc: 'Render sisi belakang.', descEn: 'Rear-angle view render.', software: '3DS Max • Keyshot' },
+          { local: 'Page5-10.jpg', fallback: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80', title: 'Sonor SQ2', desc: 'Render sisi belakang.', descEn: 'Secondary rear-angle view render.', software: '3DS Max • Keyshot' },
+          { local: 'Page5-11.jpg', fallback: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=1200&q=80', title: 'Sonor SQ2', desc: 'Render sisi belakang depan.', descEn: 'Front-to-back diagonal perspective render.', software: '3DS Max • Keyshot' },
+          { local: 'Page5-12.jpg', fallback: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80', title: 'Sonor SQ2', desc: 'Render sisi bawah detail pedal drum.', descEn: 'Close-up low-angle render of the drum pedal hardware.', software: '3DS Max • Keyshot' }
+        ]
+      }
+    };
+
+    // Initialize in-card dots and image display
+    function initSliders() {
+      ['slider1', 'slider3', 'slider5'].forEach(sId => {
+        const dotsContainer = document.getElementById(`${sId}-dots`);
+        if (!dotsContainer) return;
+        dotsContainer.innerHTML = '';
+        sliderData[sId].images.forEach((_, idx) => {
+          const dot = document.createElement('button');
+          dot.className = `h-1.5 rounded-full transition-all duration-300 ${idx === 0 ? 'w-5 bg-cyan-400' : 'w-1.5 bg-slate-700 hover:bg-slate-500'}`;
+          dot.onclick = (e) => {
+            e.stopPropagation();
+            setSlide(sId, idx);
+          };
+          dotsContainer.appendChild(dot);
+        });
+      });
+    }
+
+    function changeSlide(sliderId, direction) {
+      const data = sliderData[sliderId];
+      let newIdx = data.currentIndex + direction;
+      if (newIdx < 0) newIdx = data.images.length - 1;
+      if (newIdx >= data.images.length) newIdx = 0;
+      setSlide(sliderId, newIdx);
+    }
+
+    function setSlide(sliderId, index) {
+      const data = sliderData[sliderId];
+      data.currentIndex = index;
+      const imgObj = data.images[index];
+
+      // Update In-Card Image
+      const imgElem = document.getElementById(`${sliderId}-img`);
+      if (imgElem) {
+        imgElem.src = imgObj.local;
+        imgElem.onerror = () => { imgElem.src = imgObj.fallback; };
+      }
+
+      // Update Counter
+      const counterElem = document.getElementById(`${sliderId}-counter`);
+      if (counterElem) {
+        counterElem.textContent = String(index + 1).padStart(2, '0');
+      }
+
+      // Update Caption
+      const capElem = document.getElementById(`${sliderId}-caption`);
+      if (capElem) {
+        capElem.textContent = imgObj.title;
+      }
+
+      // Update Dots
+      const dotsContainer = document.getElementById(`${sliderId}-dots`);
+      if (dotsContainer) {
+        Array.from(dotsContainer.children).forEach((dot, idx) => {
+          if (idx === index) {
+            dot.className = 'h-1.5 rounded-full transition-all duration-300 w-5 bg-cyan-400';
+          } else {
+            dot.className = 'h-1.5 rounded-full transition-all duration-300 w-1.5 bg-slate-700 hover:bg-slate-500';
+          }
+        });
+      }
+    }
+
+    // ==========================================
+    // LIGHTBOX MODAL HANDLERS
+    // ==========================================
+    let currentLightboxSlider = 'slider1';
+
+    function openLightboxFromSlider(sliderId) {
+      currentLightboxSlider = sliderId;
+      const data = sliderData[sliderId];
+      const modal = document.getElementById('lightbox-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+
+      // Render 12 thumbnails
+      const thumbsContainer = document.getElementById('lightbox-thumbs');
+      thumbsContainer.innerHTML = '';
+      data.images.forEach((img, idx) => {
+        const thumbBtn = document.createElement('button');
+        thumbBtn.className = `w-12 h-10 sm:w-14 sm:h-11 rounded-lg overflow-hidden shrink-0 border-2 transition-all ${idx === data.currentIndex ? 'border-cyan-400 ring-2 ring-cyan-400/30 scale-105' : 'border-slate-800 opacity-60 hover:opacity-100'}`;
+        thumbBtn.innerHTML = `<img src="${img.local}" onerror="this.src='${img.fallback}'" class="w-full h-full object-cover" />`;
+        thumbBtn.onclick = () => {
+          setSlide(sliderId, idx);
+          updateLightboxView();
+        };
+        thumbsContainer.appendChild(thumbBtn);
+      });
+
+      updateLightboxView();
+    }
+
+    function updateLightboxView() {
+      const data = sliderData[currentLightboxSlider];
+      const current = data.images[data.currentIndex];
+
+      document.getElementById('lightbox-title').children[0].textContent = data.title;
+      document.getElementById('lightbox-img-title').textContent = (currentLang === 'en' && current.titleEn) ? current.titleEn : current.title;
+      document.getElementById('lightbox-software').textContent = current.software;
+      document.getElementById('lightbox-counter').textContent = data.currentIndex + 1;
+      document.getElementById('lightbox-desc-title').textContent = (currentLang === 'en' && current.titleEn) ? current.titleEn : current.title;
+      document.getElementById('lightbox-desc-text').textContent = (currentLang === 'en' && current.descEn) ? current.descEn : current.desc;
+
+      const mainImg = document.getElementById('lightbox-current-img');
+      mainImg.src = current.local;
+      mainImg.onerror = () => { mainImg.src = current.fallback; };
+
+      // Update active thumbnail
+      const thumbs = document.getElementById('lightbox-thumbs').children;
+      Array.from(thumbs).forEach((th, idx) => {
+        if (idx === data.currentIndex) {
+          th.className = 'w-12 h-10 sm:w-14 sm:h-11 rounded-lg overflow-hidden shrink-0 border-2 transition-all border-cyan-400 ring-2 ring-cyan-400/30 scale-105';
+          th.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        } else {
+          th.className = 'w-12 h-10 sm:w-14 sm:h-11 rounded-lg overflow-hidden shrink-0 border-2 transition-all border-slate-800 opacity-60 hover:opacity-100';
+        }
+      });
+    }
+
+    function lightboxNavigate(direction) {
+      changeSlide(currentLightboxSlider, direction);
+      updateLightboxView();
+    }
+
+    function closeLightbox() {
+      const modal = document.getElementById('lightbox-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = 'auto';
+    }
+
+    // Keyboard support for Lightbox & Milestone modal
+    window.addEventListener('keydown', (e) => {
+      const modal = document.getElementById('lightbox-modal');
+      if (modal && !modal.classList.contains('hidden')) {
+        if (e.key === 'ArrowLeft') lightboxNavigate(-1);
+        if (e.key === 'ArrowRight') lightboxNavigate(1);
+        if (e.key === 'Escape') closeLightbox();
+      }
+      const mModal = document.getElementById('milestone-modal');
+      if (mModal && !mModal.classList.contains('hidden')) {
+        if (e.key === 'Escape') closeMilestoneModal();
+      }
+    });
+
+    // Touch swipe support on cards
+    function setupSwipeSupport() {
+      ['slider1', 'slider3', 'slider5'].forEach(sId => {
+        const card = document.querySelector(`[data-slider-id="${sId}"]`);
+        if (!card) return;
+        let startX = 0;
+        card.addEventListener('touchstart', (e) => {
+          startX = e.changedTouches[0].clientX;
+        }, { passive: true });
+        card.addEventListener('touchend', (e) => {
+          const diff = startX - e.changedTouches[0].clientX;
+          if (diff > 40) changeSlide(sId, 1);
+          else if (diff < -40) changeSlide(sId, -1);
+        }, { passive: true });
+      });
+    }
+
+    // ==========================================
+    // 4. CHRONOLOGICAL MILESTONES DATA & TIMELINE
+    // ==========================================
+    const milestoneData = [
+      {
+        id: 'paninti-3d-lead',
+        year: '2021 — PRESENT',
+        periodId: 'Juli 2021 — Saat ini',
+        periodEn: 'July 2021 — Present',
+        roleId: '3D Artist & Visualizer',
+        roleEn: '3D Artist & Visualizer',
+        entity: 'Paninti Hub',
+        category: 'career',
+        categoryLabelId: 'Karier / Posisi Utama',
+        categoryLabelEn: 'Career / Primary Role',
+        impactId: '70+ Model Produk Komersial & Render E-Commerce',
+        impactEn: '70+ Commercial Product Models & E-Commerce Renders',
+        descId: 'Bertangung jawab untuk 3D desain produk dan visualisasi fotorealistik untuk ekosistem keluarga dari brand Emily, Norge, OONew, Inti Baby, Babyhood, Sucvent dan We Are Mother.',
+        descEn: 'Responsible for 3D product design and photorealistic visualization for the family-oriented ecosystem of brands, including Emily, Norge, OONew, Inti Baby, Babyhood, Sucvent and We Are Mother..',
+        deliverablesId: [
+          'Visualisasi 3D high-res produk untuk keperluan packaging dan promosi e-commerce',
+          'Membuat gambar & animasi 3D estetik',
+          'Merender beberapa opsi visual produk sebelum diproduksi',
+          'Menyiapkan asset visual untuk marketing kampanye media sosial & marketplace',
+          'Berkolaborasi dengan tim multimedia untuk menyisipkan gambar/animasi 3D produk',
+        ],
+        deliverablesEn: [
+          'High-resolution 3D product visualization for packaging and e-commerce promotion',
+          'Creating aesthetic 3D images & animations',
+          'Rendering multiple product visual options prior to production',
+          'Preparing visual assets for social media and marketplace marketing campaigns',
+          'Collaborating with the multimedia team to integrate 3D product images/animations',
+        ],
+        tools: ['3DS Max', 'Keyshot', 'Photoshop', 'After Effect', 'Premier Pro', 'Illustrator'],
+        iconType: 'box',
+        isCurrent: true
+      },
+      {
+        id: 'antigrvty-motion-role',
+        year: '2019 — 2023',
+        periodId: 'Oktober 2019 — Desember 2023',
+        periodEn: 'October 2019 — December 2023',
+        roleId: 'Motion Graphic Designer',
+        roleEn: 'Motion Graphic Designer',
+        entity: 'AntiGrvty Creative Agency',
+        category: 'motion',
+        categoryLabelId: 'Korporasi & BUMN',
+        categoryLabelEn: 'Corporate & BUMN',
+        impactId: '50+ Kampanye Video Komersial, AR Filter, Animasi 2D/3D & Bumper Animasi',
+        impactEn: '50+ Commercial Video Campaigns, AR Filter 2D/3D Animation & Animated Bumpers',
+        descId: 'Membuat animasi tipografi kinetik dinamis, video bumper pembuka program, identitas visual brand digital, dan visual efek iklan.',
+        descEn: 'Crafted dynamic kinetic typography animations, program bumper openers, digital visual identities, and commercial promo effects.',
+        deliverablesId: [
+          'Membuat video motion graphic 2D & 3D untuk klien brand & korporasi',
+          'Menggerakan animasi logo bumpers & title sequences',
+          'Menyalin video untuk dokumentasi proyek perusahaan',
+          'Menyiapkan aset image sequence untuk diteruskan ke tim developer app/web',
+          'Menganimasikan gambar untuk AR Filter instagram'
+        ],
+        deliverablesEn: [
+          'Creating 2D & 3D motion graphic videos for brand and corporate clients',
+          'Animating logo bumpers & title sequences',
+          'Editing videos for corporate project documentation',
+          'Preparing image sequence assets for hand-off to app/web development teams',
+          'Animating visuals for Instagram AR filters'
+        ],
+        tools: ['After Effects', 'Premiere Pro', 'Illustrator', 'Photoshop', '3DS Max', 'Keyshot'],
+        iconType: 'film'
+      },
+      {
+        id: 'ubm-dkv-academic',
+        year: '2016 — 2020',
+        periodId: '2016 — 2020',
+        periodEn: '2016 — 2020',
+        roleId: 'S1 - Desain Komunikasi Visual',
+        roleEn: 'Bachelor of Visual Communication Design',
+        entity: 'Universitas Bunda Mulia',
+        category: 'career',
+        categoryLabelId: 'Akademik / Pendidikan',
+        categoryLabelEn: 'Academic / Education',
+        impactId: 'Predikat Cum Laude • IPK 3.51 / 4.00',
+        impactEn: 'Graduated Cum Laude • GPA 3.51 / 4.00',
+        descId: 'Mempelajari metodologi komunikasi visual, pemodelan 3D, prinsip animasi 12 Disney principles, teori warna, teori tipografi, anatomi, Illustrasi dan manajemen desain komersial.',
+        descEn: 'Specialized in visual communication methodologies, 3D modeling, classical 12 animation principles, color theory, typography, anatomy, Illustration and commercial visual direction.',
+        deliverablesId: [
+          'Tugas akhir & karya portofolio multimedia komprehensif',
+          'Memahami dan menggambar sesuai perspektif serta anatomi',
+          'Kajian teori warna & semiotika desain komunikasi',
+          'Fondasi kuat pemodelan 3D dan animasi gerak',
+          'Memimpin proyek film dokumtasi'
+        ],
+        deliverablesEn: [
+          'Comprehensive multimedia thesis & portfolio presentation',
+          'Understanding and drawing according to perspective and anatomy',
+          'Visual semiotics and applied color theory research',
+          'Robust foundational training in 3D modeling & motion design',
+          'Leading a documentary film project'
+        ],
+        tools: ['3DS Max', 'Substance Painter', 'Photoshop', 'Illustrator', 'After Effects', 'Painting', 'Premiere Pro'],
+        iconType: 'graduation'
+      },
+      {
+        id: 'matra-roda-piranti',
+        year: '2014 — 2015',
+        periodId: '2014 — 2015',
+        periodEn: '2014 — 2015',
+        roleId: 'Stamping Operator',
+        roleEn: 'Stamping Machine Operator',
+        entity: 'PT. Matra Roda Piranti',
+        category: 'career',
+        categoryLabelId: 'Karier Manufaktur',
+        categoryLabelEn: 'Manufacturing Career',
+        impactId: 'Produksi Presisi Rangka Baja Kursi Mobil Toyota',
+        impactEn: 'Precision Toyota Automotive Seat Frame Stamping',
+        descId: 'Bertanggung jawab dalam proses produksi dan pembentukan rangka baja kursi untuk mobil Toyota menggunakan mesin stamping presisi industri serta kepatuhan standar K3 manufaktur otomotif.',
+        descEn: 'Responsible for stamping production and forming of steel seat frames for Toyota vehicles using industrial precision press machinery and automotive safety standards.',
+        deliverablesId: [
+          'Pengoperasian mesin stamping presisi cetak rangka baja jok mobil',
+          'Quality control & inspeksi toleransi dimensi komponen kursi Toyota',
+          'Penerapan standar keselamatan kerja K3 & 5S manufaktur otomotif'
+        ],
+        deliverablesEn: [
+          'Industrial stamping press machinery operation for steel seat frames',
+          'Dimensional tolerance inspection & QC of Toyota seat frame components',
+          'Automotive manufacturing occupational safety (K3) and 5S compliance'
+        ],
+        tools: ['Mesin Stamping', 'Vernier Caliper', 'K3 Otomotif', 'Toyota Standard'],
+        iconType: 'briefcase'
+      }
+    ];
+
+    let currentTimelineFilter = 'all';
+
+    function filterTimeline(cat) {
+      currentTimelineFilter = cat;
+      const btns = document.querySelectorAll('.timeline-filter-btn');
+      btns.forEach(b => {
+        if (b.dataset.tfilter === cat) {
+          b.className = 'timeline-filter-btn active bg-cyan-500 text-slate-950 font-bold px-3.5 py-1.5 rounded-xl text-xs sm:text-sm border border-cyan-400 shadow-lg shadow-cyan-500/20 transition';
+        } else {
+          b.className = 'timeline-filter-btn bg-slate-900/80 text-slate-300 font-semibold px-3.5 py-1.5 rounded-xl text-xs sm:text-sm border border-slate-800 hover:border-slate-700 hover:text-white transition';
+        }
+      });
+      renderTimeline(cat);
+    }
+
+    function renderMilestoneCard(m, side) {
+      const period = currentLang === 'id' ? m.periodId : m.periodEn;
+      const categoryLabel = currentLang === 'id' ? m.categoryLabelId : m.categoryLabelEn;
+      const role = currentLang === 'id' ? m.roleId : m.roleEn;
+      const impact = currentLang === 'id' ? m.impactId : m.impactEn;
+      const desc = currentLang === 'id' ? m.descId : m.descEn;
+
+      // Positioning for desktop center spine marker
+      // Left column cards: node on right side (touches center line)
+      // Right column cards: node on left side (touches center line)
+      const desktopNodePos = side === 'left'
+        ? '-right-6 lg:-right-8 top-5 translate-x-1/2'
+        : '-left-6 lg:-left-8 top-5 -translate-x-1/2';
+
+      const nodeColor = m.isCurrent
+        ? 'bg-cyan-400 border-white ring-4 ring-cyan-500/40 shadow-[0_0_16px_rgba(6,182,212,1)]'
+        : 'bg-slate-950 border-cyan-400 ring-2 ring-cyan-400/30 shadow-[0_0_8px_rgba(6,182,212,0.5)]';
+
+      return `
+        <div onclick="openMilestoneModal('${m.id}')" class="bg-slate-900/90 border border-slate-800 hover:border-cyan-400/60 rounded-xl sm:rounded-2xl p-4 sm:p-5 transition-all duration-300 shadow-lg hover:shadow-cyan-500/10 cursor-pointer group/card relative overflow-visible text-left">
+          <div class="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-cyan-400/0 to-transparent group-hover/card:via-cyan-400 transition-all duration-500 rounded-t-2xl"></div>
+
+          <!-- Desktop Center Spine Node -->
+          <div class="hidden md:flex absolute ${desktopNodePos} z-20 items-center justify-center pointer-events-none">
+            <div class="w-3.5 h-3.5 rounded-full border-2 transition-transform duration-300 group-hover/card:scale-125 ${nodeColor}"></div>
+          </div>
+
+          <!-- Mobile Left Spine Node -->
+          <div class="flex md:hidden absolute -left-8 top-5 -translate-x-1/2 z-20 items-center justify-center pointer-events-none">
+            <div class="w-3.5 h-3.5 rounded-full border-2 transition-transform duration-300 group-hover/card:scale-125 ${nodeColor}"></div>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+            <span class="text-xs font-mono font-bold px-2.5 py-0.5 rounded-full border ${
+              m.isCurrent 
+                ? 'bg-cyan-500/20 text-cyan-300 border-cyan-500/40 ring-1 ring-cyan-400/30' 
+                : 'bg-slate-950 text-slate-300 border-slate-800'
+            }">
+              ${period}
+            </span>
+            <span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">
+              ${categoryLabel}
+            </span>
+          </div>
+
+          <h4 class="text-base sm:text-lg font-bold text-white group-hover/card:text-cyan-400 transition-colors leading-snug">
+            ${role}
+          </h4>
+          <p class="text-xs sm:text-sm font-semibold text-cyan-400/90 mt-0.5">
+            ${m.entity}
+          </p>
+
+          <div class="mt-2.5 p-2 rounded-lg bg-slate-950/70 border border-slate-800/80 flex items-center gap-2">
+            <i class="fa-solid fa-award text-amber-400 text-xs shrink-0"></i>
+            <span class="text-xs font-semibold text-slate-200 truncate">${impact}</span>
+          </div>
+
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed line-clamp-2">
+            ${desc}
+          </p>
+
+          <div class="mt-3 pt-2.5 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-2">
+            <div class="flex flex-wrap gap-1.5">
+              ${m.tools.slice(0, 3).map(t => `<span class="text-[10px] font-mono bg-slate-950 text-slate-400 border border-slate-800 px-2 py-0.5 rounded">${t}</span>`).join('')}
+              ${m.tools.length > 3 ? `<span class="text-[10px] font-mono text-cyan-400 self-center">+${m.tools.length - 3}</span>` : ''}
+            </div>
+            <span class="text-xs font-semibold text-cyan-400 flex items-center gap-1 group-hover/card:translate-x-1 transition-transform">
+              <span>${currentLang === 'id' ? 'Detail' : 'Inspect'}</span>
+              <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </span>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderTimeline(cat) {
+      const container = document.getElementById('timeline-cards-container');
+      if (!container) return;
+
+      const m3D = milestoneData.find(m => m.id === 'paninti-3d-lead');
+      const mMotion = milestoneData.find(m => m.id === 'antigrvty-motion-role');
+      const mDKV = milestoneData.find(m => m.id === 'ubm-dkv-academic');
+      const mStamping = milestoneData.find(m => m.id === 'matra-roda-piranti');
+
+      let leftItems = [];
+      let rightItems = [];
+      let mobileItems = [];
+
+      if (cat === 'all') {
+        leftItems = [mMotion, mStamping].filter(Boolean);
+        rightItems = [m3D, mDKV].filter(Boolean);
+        mobileItems = [m3D, mMotion, mDKV, mStamping].filter(Boolean);
+      } else if (cat === 'product_3d') {
+        rightItems = [m3D].filter(Boolean);
+        mobileItems = [m3D].filter(Boolean);
+      } else if (cat === 'motion') {
+        leftItems = [mMotion].filter(Boolean);
+        mobileItems = [mMotion].filter(Boolean);
+      } else if (cat === 'career') {
+        leftItems = [mStamping].filter(Boolean);
+        rightItems = [m3D, mDKV].filter(Boolean);
+        mobileItems = [m3D, mDKV, mStamping].filter(Boolean);
+      }
+
+      container.innerHTML = `
+        <!-- Center glowing spine line (desktop) -->
+        <div class="hidden md:block absolute left-1/2 top-4 bottom-4 w-0.5 -translate-x-1/2 bg-gradient-to-b from-cyan-500 via-sky-500 via-indigo-500 to-slate-800 shadow-[0_0_8px_rgba(6,182,212,0.4)]"></div>
+
+        <!-- Desktop 2-Column Staggered Grid (shown on md+) -->
+        <div class="hidden md:grid md:grid-cols-2 md:gap-x-12 lg:gap-x-16 relative">
+          <!-- Left Column: Motion Graphic (pt-20) + Stamping Operator -->
+          <div class="flex flex-col space-y-6 pt-20">
+            ${leftItems.map(m => renderMilestoneCard(m, 'left')).join('')}
+          </div>
+
+          <!-- Right Column: 3D Artist (pt-0) + S1 DKV -->
+          <div class="flex flex-col space-y-6 pt-0">
+            ${rightItems.map(m => renderMilestoneCard(m, 'right')).join('')}
+          </div>
+        </div>
+
+        <!-- Mobile Single-Column Timeline (shown on < md) -->
+        <div class="md:hidden relative space-y-4 pl-8">
+          <div class="absolute left-3.5 top-3 bottom-3 w-0.5 bg-gradient-to-b from-cyan-500 via-sky-500 to-slate-800 shadow-[0_0_8px_rgba(6,182,212,0.4)]"></div>
+          ${mobileItems.map(m => renderMilestoneCard(m, 'left')).join('')}
+        </div>
+      `;
+    }
+
+    function openMilestoneModal(id) {
+      const m = milestoneData.find(item => item.id === id);
+      if (!m) return;
+
+      document.getElementById('modal-period').textContent = currentLang === 'id' ? m.periodId : m.periodEn;
+      document.getElementById('modal-category').textContent = currentLang === 'id' ? m.categoryLabelId : m.categoryLabelEn;
+      document.getElementById('modal-role').textContent = currentLang === 'id' ? m.roleId : m.roleEn;
+      document.getElementById('modal-entity').textContent = m.entity;
+      document.getElementById('modal-impact').textContent = currentLang === 'id' ? m.impactId : m.impactEn;
+      document.getElementById('modal-desc').textContent = currentLang === 'id' ? m.descId : m.descEn;
+
+      const delivContainer = document.getElementById('modal-deliverables');
+      delivContainer.innerHTML = '';
+      (currentLang === 'id' ? m.deliverablesId : m.deliverablesEn).forEach(d => {
+        const li = document.createElement('li');
+        li.className = 'flex items-start gap-2.5 text-xs sm:text-sm text-slate-300';
+        li.innerHTML = `<i class="fa-solid fa-circle-check text-cyan-400 mt-0.5"></i><span>${d}</span>`;
+        delivContainer.appendChild(li);
+      });
+
+      const toolsContainer = document.getElementById('modal-tools');
+      toolsContainer.innerHTML = '';
+      m.tools.forEach(t => {
+        const span = document.createElement('span');
+        span.className = 'px-3 py-1.5 rounded-lg bg-slate-950 border border-slate-800 text-xs font-mono text-cyan-300';
+        span.textContent = t;
+        toolsContainer.appendChild(span);
+      });
+
+      const modal = document.getElementById('milestone-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMilestoneModal() {
+      const modal = document.getElementById('milestone-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = 'auto';
+    }
+
+    // Run initialization on load
+    document.addEventListener('DOMContentLoaded', () => {
+      initSliders();
+      setupSwipeSupport();
+      renderTimeline('all');
+    });
+  </script>
+</body>
+</html>
